@@ -1,0 +1,55 @@
+body {
+    background-color: #141019;
+    background: radial-gradient(at 50% -20%, #908392, #0d0d60e) fixed;
+}
+
+#handboy {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+}
+
+#girllight {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+}
+
+#hairgirl {
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+    transform-origin: 60% 0%;
+    transform-box: fill-box;
+}
+
+#zero {
+    transform-origin: bottom;
+    transform-box: fill-box;
+    animation: zero ease-in-out 1.3s infinite alternate;
+}
+
+@keyframes zero {
+    0% {
+        transform: rotate(20deg)
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: translate(-20deg);
+    }
+}
+
+@keyframes swinghair {
+    0% {
+        transform: rotate(12deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
